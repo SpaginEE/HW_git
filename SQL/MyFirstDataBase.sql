@@ -40,3 +40,27 @@ last_name VARCHAR(30) NOT NULL,
 emp_position VARCHAR(30) NOT NULL,
 salary INT
 );
+
+
+INSERT INTO employees ( id, first_name, last_name, emp_position, salary) VALUES ( null, 'Иван', 'Иванов', 'anypos', 40000);
+INSERT INTO employees ( id, first_name, last_name, emp_position, salary) VALUES ( null, 'Петр', 'Петров', 'anypos', 32000);
+INSERT INTO employees ( id, first_name, last_name, emp_position, salary) VALUES ( null, 'Сидр', 'Сидоров', 'anypos', 27000);
+INSERT INTO employees ( id, first_name, last_name, emp_position, salary) VALUES ( null, 'Сергей', 'Сергеев', 'anypos', 27000);
+INSERT INTO employees ( id, first_name, last_name, emp_position, salary) VALUES ( null, 'Костя', 'Константинов', 'anypos', 15500);
+
+CREATE TABLE IF NOT EXISTS emp_position (
+id INT UNSIGNED NOT NULL AUTO_INCREMENT primary key,
+position_name VARCHAR(20)
+);
+INSERT INTO emp_position (id, position_name) VALUES (null, 'Директор');
+INSERT INTO emp_position (id, position_name) VALUES (null, 'Бухгалтер'); 
+INSERT INTO emp_position (id, position_name) VALUES (null, 'Менеджер');
+INSERT INTO emp_position (id, position_name) VALUES (null, 'Охранник');
+use employees;
+UPDATE employees SET emp_position=1 WHERE id=1;
+UPDATE employees SET emp_position=2 WHERE id=2;
+UPDATE employees SET emp_position=3 WHERE id IN (3,4);
+UPDATE employees SET emp_position=4 WHERE id=5;
+ALTER TABLE employees MODIFY emp_position INTEGER NOT NULL;
+
+
