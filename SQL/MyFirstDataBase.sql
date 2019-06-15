@@ -31,7 +31,7 @@ SELECT player.first_name, player.last_name, team.team_name
 FROM players player
 INNER JOIN teams team ON player.team_id=team.id;
 
-CREATE DATABASE IF NOT EXISTS employees;
+CREATE DATABASE IF NOT EXISTS employees; # Тут начинается домашка 
 use employees;
 CREATE TABLE IF NOT EXISTS employees (
 id INT UNSIGNED NOT NULL AUTO_INCREMENT primary key,
@@ -62,5 +62,10 @@ UPDATE employees SET emp_position=2 WHERE id=2;
 UPDATE employees SET emp_position=3 WHERE id IN (3,4);
 UPDATE employees SET emp_position=4 WHERE id=5;
 ALTER TABLE employees MODIFY emp_position INTEGER NOT NULL;
+use employees;
+SELECT employees.first_name, employees.last_name, employees.salary FROM employees WHERE employees.salary < 30000; # Выбрать всех с ЗП меньше 30тр
 
+SELECT men.first_name, men.last_name, men.salary, pos.position_name # Объединяю ИФ с названием должности и фильтрую МЕНЕДЖЕРОВ с ЗП меньше 30тр
+FROM employees men
+INNER JOIN emp_position pos ON men.emp_position=pos.id AND (men.salary < 30000 AND pos.position_name = 'Менеджер');
 
