@@ -1,0 +1,84 @@
+/* Основные настройки на всю страницу */
+body {
+      font-family: Tahoma, Times New Roman, Arial;
+	  font-size: 10pt;
+	  color: RGB(89,89,89);
+	  margin-left: 0px;
+	  margin-top: 0px;
+	  margin-right: 0px;
+	  margin-bottom: 0px;
+	  width: 900px;	  
+	  background: #FFFFFF;	  
+}
+/* Меняем внешний вид ссылки под стиль страницы */
+a{
+    border: none;		
+	Color:RGB(89,89,89);
+   }
+/* Фон шапки */
+#header {
+      background: RGB(102,102,102);      
+}
+/* Тут настройка текста из Шапки  */
+.header_H0_Color {
+	color: RGB(242,242,242);  
+}
+.header_H0 {
+      font-size: 28pt;
+}
+.header_H3 {
+      font-size: 12pt;
+}
+/* Рамка табилцы вокруг Фамилии и Имени */
+.ramka_top {
+	border:2px solid RGB(217,217,217);
+	text-align: center;
+}
+/* Тут вертикальные полосочки для границ таблицы */
+.ramka_left {
+    border-left:1px solid RGB(102,102,102);
+	border-right:1px solid RGB(102,102,102);
+	text-align: right;
+	vertical-align: top;
+}
+.ramka_right {
+    border-right:1px solid RGB(102,102,102);
+	text-align: left;
+	vertical-align: top;
+}
+/* Тут отступы по горизонтали */
+.offset_right {
+	margin-right: 25px;
+}
+.offset_left {
+	margin-left: 25px;
+}
+/* Базовые заголовки типа КОНТАКТЫ, ОПЫТ и т.д. */
+.header_H1 {
+      font-size: 14pt;
+	  color: #606060;
+	  font-weight: bold;
+}
+/* Подзаголовки типа Инженер и т.д. */
+.header_H2 {
+      font-size: 11pt;
+	  color: #606060;
+	  font-weight: bold;
+}
+/* Настройки фотки */
+#avatar {
+      position: relative; 
+	  right: 25px; 
+      top: 0px;
+	  width: 80%;
+      text-align: right;	  
+}
+/* Темная полоска внизу */
+#footer {
+      background: RGB(102,102,102);
+      height: 40px;
+}
+
+
+
+
