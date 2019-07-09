@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+	<script src="js/script.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+	</head>
+	<body>
+ 	Просто выводит два значения<br>
+	X1: <input type="text" id="x1"><br>
+	X2: <input type="text" id="x2"><br>
+	<input type="button" value="Run" onclick="buttonClick()"><br>
+	<div id="result"></div>
+	<br>
+	
+	Выводит сумму двух значений<br>
+	X3: <input type="text" id="x3"><br>
+	X4: <input type="text" id="x4"><br>
+	<input type="button" value="Run" onclick="buttonClickSum()"><br>
+	<div id="resultsum"></div>
+	<br>
+
+		
+	<b><font color="#2a2aff">Задания для самостоятельного выполнения</font></b><br>
+	1. После каждого нажатия кнопки Run поле вывода результата очищается от предыдущих значений.<br>
+	2. Проверка на пустой ввод.<br>
+	3. После нажатия Run выводилась сумма всех чисел от D1 до D2<br>
+	4. Добавьте кнопку «Очистить», которая удаляет введённые в поля D1 и D2 значения<br>
+	5. Подсчитывать по выбору сумму чисел от D1 до D2 или их проиведение.<br>
+	6. Найти сумму простых* чисел в промежутке от D1 до D2.<br>
+<font size="2">*Натуральное число, большее 1, называется простым, если оно ни на что не делится, кроме
+себя и 1. Т.е. если D1=2, а D2=10, результат должен быть: 2, 3, 5, 7.</font><br>
+	<br>
+
+	<form>
+	<!-- Окно для ввода D1 -->
+	D1: <input type="text" id="d1"> 
+	
+	<!-- Первый радио, он же по умолчанию выбран -->
+	<input type="radio" name="MyFirstRadio" id="SumD" value="1" checked="checked"><label>Cумма чисел от D1 до D2</label><br>
+	
+	<!-- Окно для ввода D2 -->
+	D2: <input type="text" id="d2"> 
+	
+	<!-- Второй радио, он говорит хотим умножать -->
+	<input type="radio" name="MyFirstRadio" id="UmnD" value="2"><label>Произведение чисел от D1 до D2</label><br>
+	
+	<!-- Кнопка, которая всё считает -->
+	<input type="button" value="Run" onclick="buttonClickHW()">
+	
+	<!-- Т.к. не указано каким именно методом очищать, но очищать допускается всё сразу применяем type="reset" и добавляем form -->
+	<button type="reset">Очистить</button>
+	
+	<!-- Здесь выводим то, что насчитали в скрипте -->
+	<div id="resulthw"></div>
+	<div id="sumalld"></div>
+	<div id="simp"></div>	
+	</form>
+	<br>
+	*Для D1 и D2 допустимо следующее:<br>
+	D1<0 и/или D2<0<br>
+	D1>D2<br>
+	</body>
+</html>
+	
