@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+	<script src="js/game_script.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+	<link rel="stylesheet" type="text/css" href="css/game_style.css" />
+	</head>
+	<body>
+	<div id="Info">
+	<b><font color="#2a2aff">Задание повышенной сложности:</font></b><br>
+	1. Написать игру по типу <a href="http://www.webgamesonline.com/memory/" target="=_blank">http://www.webgamesonline.com/memory/</a><br>
+	2. В начале все картинки "рубашкой" вверх. Игрок может открывать по 2 картинки.<br>
+	3. Если изображения на них одинаковые – они исчезают. Если разные, то переворачиваются обратно.<br> 
+	4. Цель игры – последовательно открывая картинки с одинаковыми изображениями, добиться исчезновения всех.<br>
+	<br>
+	* Я не программист, и скучно мне совсем не было до этого. И если после проверки кода вы решите дать мне звание варвар года, я пойму =)<br>
+	Просто домашку основную сделал 9 июля и до DL целых 3 дня.<br>
+	** Много заиствованных и доработанных алгоритмов. Старался на все оставить ссылки на исходик.<br>
+	<br>
+	</div>
+	<input type="button" value="Начать" onclick="buttonClickGenerate()">
+	<input type="checkbox" id="myHelp" onchange="buttonClickGenerate()"> Я хочу сыграть с подсказкой	
+	<!-- Тут выбор уровня сложности -->
+	<form name="fLevel">
+		Твой уровень:
+		<select name="lvl" id="L1" onchange="buttonClickGenerate()">
+			  <option value="4" >Не помню что на завтрак ел</option>
+			  <option value="16">Помню что на завтрак ел</option>
+			  <option value="36" selected="selected">У меня хорошая память</option>
+		</select>
+	</form>
+
+<!-- Основа идеи тут http://www.cyberforum.ru/javascript/thread1711594.html -->
+<table id="tbl" >
+	
+</table>
+
+<div id="myVictory" class="vic"></div>
+
+
+	</body>
+</html>
+	

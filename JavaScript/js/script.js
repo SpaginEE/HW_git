@@ -14,7 +14,7 @@ for(var i=10; i<=20; i++){
 var a = a + i
 }
 console.log(a);
-alert("В конселе выведены чилсла от 10 до 20. Их квадраты и сумма всех.");
+alert("В консоле выведены числа от 10 до 20. Их квадраты и сумма всех.");
 // Просто выводит два значения
 function buttonClick(){
 		var x1 = document.getElementById('x1').value;

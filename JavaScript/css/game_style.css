@@ -1,0 +1,51 @@
+/* Основные настройки на всю страницу */
+body {
+      font-family: Tahoma, Times New Roman, Arial;
+	  font-size: 10pt;
+	  color: RGB(89,89,89);
+	  margin-left: 0px;
+	  margin-top: 0px;
+	  margin-right: 0px;
+	  margin-bottom: 0px;
+	  width: 900px;	  
+	  background: #FFFFFF;	  
+}
+/* Меняем внешний вид ссылки под стиль страницы */
+a{
+    border: none;		
+	Color:RGB(89,89,89);
+   }
+table {
+    background: RGB(217,217,217); /* Цвет фона таблицы */
+	border-collapse: collapse; /* Убираем двойные линии между ячейками */
+	/* width: 100%;  Ширина таблицы */
+	
+
+   }
+tr, td {
+    padding: 1px; /* Поля вокруг текста */
+    border: 5px solid #FFFFFF; /* Рамка вокруг ячеек */
+   }
+td {
+	width: 60px; /* Ширина ячеек */
+	text-align: center;
+   } 
+tr {
+	height: 65px; /* Высота ячеек */
+	vertical-align: middle;
+   }
+
+/* Настройки картинок */
+img {
+      display: block;
+	  height: 60px;  
+	  width: 65px;
+	  max-width: 65px;	     	  
+}
+.vic {
+	font-size: 40pt;
+	color: RGB(16,28,245);
+}
+
+
+
